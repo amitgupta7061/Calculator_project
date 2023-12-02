@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="calc.css">
+</head>
+<body>
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="calculator.css">
+    <script src="calculator.js"></script>
+</head>
+<body>
+    <div class="background" >
+        <div class="main-part">
+            <input type="text" id="display" class="s"readonly>
+           <div class="section_1">
+            <div class="switch" onclick="currentDisplay=currentDisplay+'7';
+            document.querySelector('#display').value = currentDisplay;">7</div>
+            <div class="switch" onclick="currentDisplay=currentDisplay+'8';
+            document.querySelector('#display').value = currentDisplay;">8</div>
+            <div class="switch" onclick="currentDisplay=currentDisplay+'9';
+            document.querySelector('#display').value = currentDisplay;">9</div>
+            <div class="switch" onclick="currentDisplay=currentDisplay+'/';
+            document.querySelector('#display').value = currentDisplay;">/</div>
+            <div class="switch" onclick="currentDisplay='';
+            document.querySelector('#display').value = currentDisplay;">C</div>
+           </div>
+           <div class="section_2">
+            <div class="switch" onclick="currentDisplay=currentDisplay+'4';
+            document.querySelector('#display').value = currentDisplay;">4</div>
+            <div class="switch" onclick="currentDisplay=currentDisplay+'5';
+            document.querySelector('#display').value = currentDisplay;">5</div>
+            <div class="switch" onclick="currentDisplay=currentDisplay+'6';
+            document.querySelector('#display').value = currentDisplay;">6</div>
+            <div class="switch" onclick="currentDisplay=currentDisplay+'*';
+            document.querySelector('#display').value = currentDisplay;">X</div>
+            <div class="switch" onclick="currentDisplay=currentDisplay+'%';
+            document.querySelector('#display').value = currentDisplay;">%</div>
+           </div>
+           <div class="section_3">
+            <div class="switch" onclick="currentDisplay=currentDisplay+'1';
+            document.querySelector('#display').value = currentDisplay;">1</div>
+            <div class="switch" onclick="currentDisplay=currentDisplay+'2';
+            document.querySelector('#display').value = currentDisplay;">2</div>
+            <div class="switch" onclick="currentDisplay=currentDisplay+'3';
+            document.querySelector('#display').value = currentDisplay;">3</div>
+            <div class="switch" onclick="currentDisplay=currentDisplay+'-';
+            document.querySelector('#display').value = currentDisplay;">-</div>
+            <div class="switch">MC</div>
+           </div>
+           <div class="section_4">
+            <div class="switch" onclick="currentDisplay=currentDisplay+'0';
+            document.querySelector('#display').value = currentDisplay;">0</div>
+            <div class="switch" onclick="currentDisplay=currentDisplay+'.';
+            document.querySelector('#display').value = currentDisplay;">.</div>
+            <div class="switch">M+</div>
+            <div class="switch" onclick="currentDisplay=currentDisplay+'+';
+            document.querySelector('#display').value = currentDisplay;">+</div>
+            <div class="switch" onclick="currentDisplay = eval(currentDisplay);
+            document.querySelector('#display').value = currentDisplay;">=</div>
+           </div>
+        </div>
+    </div>
+<script>
+    let currentDisplay = '';
+    document.querySelector('#display').value = currentDisplay;
+</script>
+    
+</body>
+</html>
+</body>
+</html>
